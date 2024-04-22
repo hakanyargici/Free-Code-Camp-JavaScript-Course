@@ -107,3 +107,9 @@ function convertToInteger(str) {
   return convert;
 }
 
+// Quest 110 - Use The Conditional (Ternary) Operator
+function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal";
+}
+
+
