@@ -94,3 +94,10 @@ function randomRange(myMin, myMax) {
   }
   return 0;
 }
+
+// Quest 108 - Use The parseInt Function
+function convertToInteger(str) {
+  const convert = parseInt(str);
+  return convert;
+}
+
