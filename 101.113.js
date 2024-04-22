@@ -78,4 +78,19 @@ function randomWholeNum() {
 }
 
 // Quest 107 - Generate Random Whole Numbers within a Range
-
+function randomRange(myMin, myMax) {
+  if(myMin < myMax) {
+    const math = Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+    if (math == myMax) {
+      console.log(myMin);
+      return myMax;
+    } else if (math <= myMax || math >= myMin) {
+      console.log(math);
+      return math; 
+    } else {
+      console.log(myMin);
+      return myMin;
+    }
+  }
+  return 0;
+}
