@@ -120,7 +120,6 @@ function checkSign(num) {
 }
 
 // Quest 112 - Use Recursion to Create a Countdown
-
 function countdown(n){
   if (n < 1) {
     return [];
@@ -129,4 +128,11 @@ function countdown(n){
     arr.unshift(n);
     return arr;
   }
+}
+
+// Quest 113 - Use Recursion to Create a Range of Numbers
+function rangeOfNumbers(startNum, endNum) {
+  return endNum < startNum
+    ? []
+    : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
 }
