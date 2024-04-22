@@ -101,3 +101,9 @@ function convertToInteger(str) {
   return convert;
 }
 
+// Quest 109 - Use The parseInt With A Radix
+function convertToInteger(str) {
+  const convert = parseInt(str, 2);
+  return convert;
+}
+
